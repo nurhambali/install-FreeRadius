@@ -91,6 +91,7 @@ unzip master.zip
 mv daloradius-master /var/www/html/daloradius/
 chmod 664 /var/www/html/daloradius/library/daloradius.conf.php
 chown -R apache:apache /var/www/html/daloradius/
+cd /var/www/html/daloradius/
 
 #konfigurasi sql untuk daloradius
 mysql -u root -p radius < contrib/db/fr2-mysql-daloradius-and-freeradius.sql 
